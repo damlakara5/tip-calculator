@@ -1,0 +1,283 @@
+body {
+  background-color: hsl(185, 41%, 84%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Space Mono", sans-serif;
+  font-weight: 400;
+}
+
+.logoDiv {
+  position: absolute;
+  top: 10%;
+}
+
+.card {
+  background-color: #fff;
+  width: 60%;
+  height: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  border-radius: 15px;
+}
+
+.first-part {
+  height: 90%;
+  margin: auto 40px;
+  color: hsl(186, 14%, 43%);
+  font-size: 13px;
+}
+
+.error-1 {
+  color: rgba(250, 36, 36, 0.774);
+  margin-left: 60%;
+}
+
+.error-2 {
+  color: rgba(250, 36, 36, 0.774);
+  margin-left: 33%;
+}
+
+.error_style {
+  border: 2px solid rgba(250, 36, 36, 0.774);
+}
+
+.hidden {
+  display: none;
+}
+
+input:not(.btn-6) {
+  width: 95%;
+  text-align: end;
+  background-color: hsl(189, 41%, 97%);
+  outline: none;
+  padding: 5px 10px;
+  border: none;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+input:focus {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.bill-value {
+  background-image: url(../images/icon-dollar.svg);
+  background-size: 2.5%;
+  background-position: 0.75em 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.tip-box {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(2, 55%);
+  row-gap: 25%;
+  column-gap: 5%;
+  margin-bottom: 50px;
+  margin-top: 5px;
+}
+
+.btn {
+  padding: 5px 10px;
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn:not(:last-child) {
+  background-color: hsl(183, 100%, 15%);
+  color: #fff;
+}
+
+.btn-6 {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+  padding: 5px 5px;
+  outline: none;
+  text-align: center;
+}
+
+.people input {
+  background-image: url(/images/icon-person.svg);
+  background-size: 3%;
+  background-position: 0.75em 50%;
+  background-repeat: no-repeat;
+}
+
+::placeholder {
+  font-family: "Space Mono";
+  color: hsl(184, 14%, 56%);
+}
+.second-part {
+  background-color: hsl(183, 100%, 15%);
+  height: 90%;
+  margin: auto 20px;
+  border-radius: 15px;
+  color: hsl(189, 41%, 97%);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 25px;
+}
+
+.text {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+span {
+  font-size: 11px;
+  color: hsl(184, 14%, 56%);
+}
+.value {
+  color: hsl(172, 67%, 45%);
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.reset {
+  width: 85%;
+  text-align: center;
+  margin-left: 25px;
+  margin-top: 50px;
+  padding: 8px;
+  background-color: hsl(172, 67%, 45%);
+  opacity: 0.2;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.reset:hover,
+.btn:not(:last-child):hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  opacity: 1;
+}
+
+@media only screen and(max-width: 990px) {
+  .btn-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .btn-6 ::placeholder {
+    font-size: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  .card {
+    width: 70%;
+  }
+  .value {
+    font-size: 1.7em;
+  }
+
+  .first-part {
+    margin: auto 2em;
+  }
+
+  .tip-box {
+    row-gap: 20%;
+    column-gap: 5%;
+  }
+
+  .btn-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .btn-6 ::placeholder {
+    font-size: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .card {
+    width: 80%;
+  }
+  .first-part {
+    margin: auto 1em;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .value {
+    margin-top: 5px;
+    font-size: 1.3em;
+  }
+
+  .tip-box {
+    row-gap: 10%;
+    column-gap: 4%;
+  }
+
+  .btn:not(:last-child) {
+    padding: 5px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+  .span {
+    font-size: 12px;
+  }
+  .reset {
+    margin: auto 15px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .card {
+    width: 85%;
+  }
+  .second-part {
+    margin: auto 10px;
+  }
+  .btn-6 ::placeholder {
+    font-size: 0.3em;
+  }
+  .people input,
+  .bill-value {
+    background-size: 5%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 10% 90%;
+  }
+  .logoDiv {
+    top: 1%;
+    left: 40%;
+  }
+  .card {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: auto;
+  }
+
+  .people input,
+  .bill-value {
+    background-size: 3%;
+  }
+}
